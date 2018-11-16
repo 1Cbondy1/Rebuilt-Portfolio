@@ -1,0 +1,79 @@
+<!--Bootstrap-Portfolio-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width initial-scale:1.0">
+
+    <!--linked reset.css file for compatibility between browsers-->
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!--linked bootstrap stylesheet file-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--linked my css stylesheet to overide some of the bootstrap css-->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <h1 id="myName">Clayton Bondy</h1>
+
+            <!--used bootstraps navbar and made some css adjustments-->
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!--created a container where I organized the forms into rows and columns-->
+
+    <div class="container">
+        <div class="row rowOuter">
+            <div class="col-md-12">
+                <div class="rowInner">
+                    <h2>Contact</h2>
+                    <div id="borderLine"> </div>
+                </div>
+                    <section>
+                        <form>
+                            First name:<br>
+                            <input type="text" name="name"><br>
+                            Last name:<br>
+                            <input type="text" name="email">
+                            Message<br>
+                            <textarea id="txtArea" placeholder="Type message here..."></textarea>
+                            <button type="button">Submit</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer1">
+        Copyright © 2018
+    </footer>
+</body>
+
+</html>

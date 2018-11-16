@@ -1,0 +1,129 @@
+<!--Bootstrap-Portfolio-->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width initial-scale:1.0">
+
+    <!--linked reset.css file for compatibility between browsers-->
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!--linked bootstrap stylesheet file-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--linked my css stylesheet to overide some of the bootstrap css-->
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <header>
+            <div class="wrapper">
+                <h1 id="myName">Clayton Bondy</h1>
+
+                <!--used bootstraps navbar and made some css adjustments-->
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                            <a class="nav-link" href="index.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </header>
+
+    <!--created a container where I organized images/titles into rows and columns. Attempted to use bootstraps Card class at first, but couldn't get the images and titles to match the previous portfolio page.-->
+
+    <div class="container">
+        <div class="row rowOuter">
+
+            <!--added column for full width of row-->
+
+            <div class="col-md-12">
+
+                <!--added 4 rows inside the first outer column-->
+
+                <div class="row">
+                    <div class="col-md-12 col-portfolio">
+                        <h2>Portfolio</h2>
+                        <div id="borderLine"> </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+
+                    <!--for each card, I created a column that takes up a third of the row, with one third empty-->
+
+                    <div class="col-md-4">
+                        <div id= "image1">
+                            <img src="https://www.placehold.it/275x250.com" alt="Hangman">
+                            <div class= "galleryText">Hangman</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div id= "image1">
+                            <img src="https://www.placehold.it/275x250.com" alt="RPG Game">
+                            <div class= "galleryText">RPG Game</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div id= "image1">
+                            <img src="https://www.placehold.it/275x250.com" alt="Triva Game">
+                            <div class= "galleryText">Triva Game</div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div id= "image1">
+                            <img src="https://www.placehold.it/275x250.com" alt="Rutgers Info Widget">
+                            <div class= "galleryText">Rutgers Info Widget</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id= "image1">
+                            <img src="https://www.placehold.it/275x250.com" alt="Rock Paper Scissors">
+                            <div class= "galleryText">ock Paper Scissors</div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+            
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="footer1">
+        Copyright © 2018
+    </footer>
+</body>
+
+</html>
