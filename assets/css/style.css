@@ -71,6 +71,7 @@ h2 {
 
 #image {
     margin-right: 10px;
+    margin-bottom: 10px;
     float: left;
     width: 250px;
     height: 270px;
@@ -85,5 +86,35 @@ h2 {
     padding-top: 30px;
     padding-bottom: 5px;
     font-size: 12px;
-    border-top: 4px solid #00DBE6;
+    border-top: 4px solid #00C39C;
+}
+
+/* Contact */
+
+.form-info {
+    text-align: justify;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+input[type=text]:not(.browser-default) {
+    border: 1px solid grey;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+textarea {
+    height: 150px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: #00C39C;
+    color: white;
+    border-radius: 4px;
+    margin-top: 12px;
+    border: none;
 }
