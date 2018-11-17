@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(to right bottom,  #FF8C80, #9C0000);
+    background: linear-gradient( #FF8C80, #9C0000);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -43,7 +43,7 @@ h2 {
     margin: 0px 20px 0px 20px;
 }
 
-.row {
+.row-margin {
     margin-top: 40px;
     margin-bottom: 85px;
 }
@@ -63,7 +63,7 @@ h2 {
 /* About me */
 
 #about-style {
-    background: white;
+    background: #FFFCF3;
     border: 1px solid lightgrey;
     border-radius: 4px;
     box-shadow: 2px 2px 4px grey;
@@ -95,20 +95,20 @@ h2 {
     text-align: justify;
     font-family: sans-serif;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 input[type=text]:not(.browser-default) {
     border: 1px solid grey;
     font-size: 16px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 18px;
+    font-size: 14px;
+
 }
 
 textarea {
     height: 150px;
     padding: 10px;
+    font-size: 14px;
 }
 
 .btn {
@@ -117,4 +117,38 @@ textarea {
     border-radius: 4px;
     margin-top: 12px;
     border: none;
+}
+
+/* Portfolio */
+ .portfolio {
+     position: relative;
+     margin: auto;
+     display: inline-block;
+     margin-bottom: 10px;
+ }
+
+ #image1 {
+    margin-left: 12px;
+    margin-right: 12px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.gallery-text {
+    position: absolute;
+    bottom: 30px;
+    background: #00C39C;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px 12px 0px 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 250px;
+    border-radius: 4px;
+}
+
+a {
+    color: white;
+    font-size: 16px;
 }
