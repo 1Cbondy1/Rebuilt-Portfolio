@@ -1,4 +1,5 @@
-<!--Bootstrap-Portfolio-->
+<!--Rebuilt-Portfolio-->
+<!--Built using the Materialize framework, this portfolio is intended to demonstrate my web development abilities and showcase my UX/UI design sensibilities-->
 
 <!DOCTYPE html>
 <html lang="en-us">
@@ -8,68 +9,53 @@
     <title>Index</title>
     <meta name="viewport" content="width=device-width, initial-scale:1.0">
 
-    <!--linked reset.css file for compatibility between browsers-->
-
+    <!-- link reset.css file for better compatibility between browsers -->
     <link rel="stylesheet" href="assets/css/reset.css">
 
-    <!--linked bootstrap stylesheet file-->
+    <!-- link to Materialize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
-    <!--linked my css stylesheet to overide some of the bootstrap css-->
-
+    <!-- link to css stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-        <div class="wrapper">
-            <h1 id="myName">Clayton Bondy</h1>
-
-            <!--used bootstraps navbar and made some css adjustments-->
-
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div>
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link" href="index.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
+            <!--used Materialize's navbar and made some css adjustments-->
+            <nav>
+                <div class="nav-wrapper container">
+                    <a href="#" class="brand-logo">Clayton Bondy</a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </nav>
-        </div>
     </header>
 
     <!--created a container where I organized the text into rows and columns and overid the css to add some customization-->
-
     <div class="container">
-        <div class="row rowOuter">
-            <div class="col-md-12">
-                <div class="rowInner">
+        <div class="row" id= "about-style">
+            <div>
+                <div>
                     <h2>About Me</h2>
-                    <div id="borderLine"> </div>
+                    <hr id="border-line">
                 </div>
-                <div class="rowInner">
+                <div class="section">
                     <section>
-                        <div id="image" style="float: left"><img src="assets/images/headshot.png">
+                        <img id="image" src="assets/images/avatar1.png">
+                        <div class="text-info">
+                            <p> I’ve always had a strong interest in design and technology. These interests are what drew me to LSU's School of Architecture, where I was conditioned to work in an intense, collaborative studio environment. It’s also where I picked up my first coding chops through a minor in digital media arts. I took the concepts I learned into practice, as a scenic designer for broadcast television in New York City. After working for a few years, I felt the pull towards a career in an emerging and faster-paced industry.</p><br>
+                            <p> I moved back to Austin and enrolled in The Coding Bootcamp UT. The content of the course was instantly fascinating to me. The Adobe Creative Suite tools that I had used for years could now be supplemented with JavaScript, React, and other technologies to add functionality to static designs. I hope to use the technical knowledge I've gained along with my background in design build a career in UX/UI development.</p>
                         </div>
-                        <p> From a young age, I’ve had a profound interest in media, technology, and the point at which they converge. At Louisiana State University's School of Architecture, I was conditioned to work in an intense, creative, and collaborative studio environment. There I developed the standard architectural concepts and technical standards. By the time I graduated, I was ready to tackle the world with my archival ink and T-square, one piece of trace paper at a time.</p>
-                        <p>For the first few years after graduation, I practiced scenic design for broadcast television and branded environments in New York City. However, I quickly felt the pull towards a career in an emerging and faster-paced industry.</p>
-                        <p>I moved back to Austin and am currently enrolled in The Coding Bootcamp at UT for web development. After completion the program, I hope to use the technical knowledge I've gained to build a career in UX/UI design.</p>
                     </section>
                 </div>
             </div>
         </div>
     </div>
     
-        <footer id="footer1">
+        <footer id="footer">
             Copyright © 2018
         </footer>
 </body>
