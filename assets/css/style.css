@@ -6,28 +6,31 @@
 }
 
 body {
-    background: linear-gradient( #FF8C80, #9C0000);
+    background: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
 }
 
-nav {
-    background-color: #26394C;
-}
-
 nav .nav-wrapper {
     text-align: center;
     height: 100%;
-}
+} 
 
+nav {
+    z-index: 1;
+    background: linear-gradient(to right bottom, #E61414, #960000);
+}
 nav .brand-logo {
+    left: 0%;
+    -webkit-transform: translateX(-0%);
+    transform: 0;
     float: left;
     position: relative;
     color: white;
     display: inline-block;
-    font-size: 30px;
+    font-size: 25px;
     padding: 0;
 }
 
@@ -45,7 +48,7 @@ h2 {
 
 .row-margin {
     margin-top: 40px;
-    margin-bottom: 85px;
+    margin-bottom: 80px;
 }
 
 .text-info {
@@ -60,13 +63,35 @@ h2 {
     padding: 20px;
 }
 
+ul .right {
+    width: 100%;
+    background: white;
+}
+
+nav .sidenav-trigger {
+    text-align: right;
+    float: right;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    background: linear-gradient(white, lightgrey);
+    width: 100%;
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    border-top: 1px solid lightgrey;
+}
+
 /* About me */
 
 #about-style {
-    background: #FFFCF3;
+    background-color: white;
     border: 1px solid lightgrey;
     border-radius: 4px;
-    box-shadow: 2px 2px 4px grey;
+    box-shadow: 2px 2px 4px lightgrey;
 }
 
 #image {
@@ -75,18 +100,6 @@ h2 {
     float: left;
     width: 250px;
     height: 270px;
-}
-
-#footer {
-    background: white;
-    width: 100%;
-    position: fixed;
-    bottom: 0px;
-    color: black;
-    padding-top: 30px;
-    padding-bottom: 5px;
-    font-size: 12px;
-    border-top: 4px solid #00C39C;
 }
 
 /* Contact */
@@ -99,7 +112,7 @@ h2 {
 }
 
 input[type=text]:not(.browser-default) {
-    border: 1px solid grey;
+    border: 1px solid lightgrey;
     font-size: 16px;
     font-size: 14px;
 
@@ -109,6 +122,7 @@ textarea {
     height: 150px;
     padding: 10px;
     font-size: 14px;
+    border: 1px solid lightgrey;
 }
 
 .btn {
@@ -130,25 +144,45 @@ textarea {
  #image1 {
     margin-left: 12px;
     margin-right: 12px;
-    border-radius: 4px;
     margin-bottom: 12px;
 }
 
-.gallery-text {
-    position: absolute;
-    bottom: 30px;
-    background: #00C39C;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 0px 12px 0px 12px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 250px;
-    border-radius: 4px;
+.card-image {
+    height: 250px;
+    width: 270px;
+}
+
+.card {
+    display: inline-block;
+    margin: 0px 10px 0px 10px;
+    width: 270px;
+    margin-bottom: 20px;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
+    text-align: center;
+    margin: auto;
+    color: white;
+}
+
+.card .card-action:last-child {
+    background-color: #00C39C;
 }
 
 a {
     color: white;
     font-size: 16px;
+}
+
+/* Sidenav */
+
+h3 {
+    background: linear-gradient(to right bottom, #E61414, #960000);
+    font-size: 25px;
+    margin: 0px auto 0px auto;
+    color: #fff;
+    background-color: #ee6e73;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
 }
