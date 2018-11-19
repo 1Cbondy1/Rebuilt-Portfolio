@@ -6,6 +6,7 @@
 }
 
 body {
+    /* background: linear-gradient(#E61414, white); */
     background: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,6 +15,7 @@ body {
 }
 
 h2 {
+    /* background: linear-gradient(white, rgb(224, 224, 224)); */
     font-size: 25px;
     text-align: left;
     padding: 20px;
@@ -22,6 +24,7 @@ h2 {
 
 #border-line {
     border: lightgrey solid .5px;
+    /* margin: 0px 20px 0px 20px; */
     margin: 0px 20px 0px 20px;
 }
 
@@ -51,7 +54,8 @@ ul .right {
 
 nav {
     z-index: 1;
-    background: linear-gradient(to right bottom, #E61414, #960000);
+    /* background: linear-gradient(to right bottom, #00CA9C, #00CA9C); */
+    background: #333333;
     text-align: center;
     height: 64px;
     line-height: 64px;
@@ -87,7 +91,8 @@ nav .sidenav-trigger i {
 /* About me */
 
 #about-style {
-    background-color: white;
+    background: white;
+    /* background-color: white; */
     border: 1px solid lightgrey;
     border-radius: 4px;
     box-shadow: 2px 2px 4px lightgrey;
@@ -114,10 +119,11 @@ input[type=text]:not(.browser-default) {
     border: 1px solid lightgrey;
     font-size: 16px;
     font-size: 14px;
-
+    background: white;
 }
 
 textarea {
+    background: white;
     height: 150px;
     padding: 10px;
     font-size: 14px;
@@ -165,7 +171,7 @@ textarea {
 }
 
 .card .card-action:last-child {
-    background-color: #00C39C;
+    background-color: #00CA9C;
 }
 
 a {
@@ -178,11 +184,11 @@ a {
 /* Sidenav */
 
 h3 {
-    background: linear-gradient(to right bottom, #E61414, #960000);
+    background-color: #333333;
+    /* background: linear-gradient(to right bottom, #E61414, #960000); */
     font-size: 25px;
     margin: 0px auto 0px auto;
     color: #fff;
-    background-color: #ee6e73;
     width: 100%;
     line-height: 64px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
@@ -206,7 +212,17 @@ ul #mobile-demo .sidenav {
         color: white;
         font-size: 25px;
     }
+}
 
+/* media query small screens */
+@media screen and (max-width: 475px) {
+    #image {
+        margin-right: 10px;
+        margin-bottom: 10px;
+        float: none;
+        width: 250px;
+        height: 270px;
+    }
 }
 /* media query for tiny screens */
 @media screen and (max-width: 347px) {
