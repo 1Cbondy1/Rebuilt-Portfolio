@@ -13,29 +13,8 @@ body {
     text-align: center;
 }
 
-nav .nav-wrapper {
-    text-align: center;
-    height: 100%;
-} 
-
-nav {
-    z-index: 1;
-    background: linear-gradient(to right bottom, #E61414, #960000);
-}
-nav .brand-logo {
-    left: 0%;
-    -webkit-transform: translateX(-0%);
-    transform: 0;
-    float: left;
-    position: relative;
-    color: white;
-    display: inline-block;
-    font-size: 25px;
-    padding: 0;
-}
-
 h2 {
-    font-size: 30px;
+    font-size: 25px;
     text-align: left;
     padding: 20px;
     margin: 0px;
@@ -68,12 +47,32 @@ ul .right {
     background: white;
 }
 
-nav .sidenav-trigger {
-    text-align: right;
-    float: right;
+/* Navbar */
+
+nav {
+    z-index: 1;
+    background: linear-gradient(to right bottom, #E61414, #960000);
+    text-align: center;
+    height: 64px;
+    line-height: 64px;
+}
+
+nav .brand-logo {
+    left: 0%;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+nav .sidenav-trigger i {
+    height: 64px;
+    line-height: 64px;
 }
 
 #footer {
+    z-index: 2;
     position: fixed;
     bottom: 0px;
     background: linear-gradient(white, lightgrey);
@@ -172,6 +171,8 @@ textarea {
 a {
     color: white;
     font-size: 16px;
+    margin: 0px;
+    text-align: left;
 }
 
 /* Sidenav */
@@ -183,6 +184,40 @@ h3 {
     color: #fff;
     background-color: #ee6e73;
     width: 100%;
-    height: 56px;
-    line-height: 56px;
+    line-height: 64px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+ul #mobile-demo .sidenav {
+    text-align: center;
+    margin: 0px;
+}
+
+.sidenav .divider {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* media query for medium and small screens */
+@media screen and (max-width: 992px) {
+    nav .brand-logo {
+        left: 50%;
+        display: inline-block;
+        color: white;
+        font-size: 25px;
+    }
+
+}
+/* media query for tiny screens */
+@media screen and (max-width: 347px) {
+    .card-image {
+        height: auto;
+        width: auto;
+    }
+    .card {
+        display: inline-block;
+        margin: 0px 10px 0px 10px;
+        width: auto;
+        margin-bottom: 20px;
+    }
 }
