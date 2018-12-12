@@ -186,6 +186,20 @@ a {
     text-align: left;
 }
 
+/* Design */
+
+.slider .slides li img {
+    width: -webkit-calc(100% - 40px);
+}
+
+#d-img {
+    border-radius: 4px;
+}
+
+.slider .slides {
+    background-color: white;
+}
+
 /* Sidenav */
 
 h3 {
@@ -226,6 +240,21 @@ ul #mobile-demo .sidenav {
         float: none;
         width: 250px;
         height: 270px;
+    }
+    .slider .slides {
+        height: 300px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .slider .slides {
+        background-color:transparent;
+    }
+
+    .slider .indicators .indicator-item {
+        height: 12px;
+        width: 12px;
+        margin: 8px 8px 8px 8px;
     }
 }
 /* media query for tiny screens */

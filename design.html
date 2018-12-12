@@ -1,0 +1,102 @@
+<!-- Rebuilt-Portfolio -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clayton Bondy</title>
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+
+    <!-- link to favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/images/avatar2.png"/>
+
+    <!-- link reset.css file for better compatibility between browsers -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+
+    <!-- link to Materialize CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- link to Materialize JavaScript and jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- link to css stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    
+    <header>
+        <!-- Desktop nav with links to other pages-->
+        <nav>
+            <div class="container">
+                <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Clayton Bondy</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Porfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Mobile nav includes hamburger menu with dropdown -->
+        <ul class="sidenav" id="mobile-demo">
+            <div class="sidenav-header">
+                <h3>Clayton Bondy</h3>
+            </div>
+            <li><a href="index.html"><i class="material-icons">person</i>About</a></li>
+            <li><a href="portfolio.html"><i class="material-icons">photo_library</i>Portfolio</a></li>
+            <li><a href="contact.html"><i class="material-icons">phone</i>Contact</a></li>
+            <li><div class="divider"></div></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="row row-margin" id= "about-style">
+            <div class="row">
+                <h2>Scenic Design</h2>
+                <hr id="border-line">
+            </div>
+            <!-- slider that displays scenic design projects -->
+            <div class="slider">
+                <ul class="slides">
+                    <li><img id="d-img" src="assets/images/design/csd-01.jpg"></li>
+                    <li><img id="d-img" src="assets/images/design/csd-02.jpg"></li>
+                    <li><img id="d-img" src="assets/images/design/csd-03.jpg"></li>
+                    <li><img id="d-img" src="assets/images/design/csd-04.jpg"></li>
+                    <li><img id="d-img" src="assets/images/design/csd-05.jpg"></li>
+                    <li><img id="d-img" src="assets/images/design/csd-06.jpg"></li>
+                    <li><img id="d-img" src="assets/images/design/yd-07.png"></li>
+                    <li><img id="d-img" src="assets/images/design/yd-08.png"></li>
+                    <li><img id="d-img" src="assets/images/design/csd-09.jpg"></li>
+                    <li><img id="d-img" src="assets/images/design/csd-10.jpg"></li>
+                </ul>
+            </div>
+            <div class="section">
+                <div class="text-info">
+                    <p>For the better part of 5 years I've practiced scenic design for broadcast television, branded environments, and events. The experience gained in that industry has helped to define my design sensibilities. Above are 3D renderings and photography of projects that I was heavly involved in with Clickspring Design and Youmans Designs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer id="footer">
+        Copyright © 2018
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function(){
+            $('.slider').slider();
+        });
+    </script>
+</body>
+
+</html>
