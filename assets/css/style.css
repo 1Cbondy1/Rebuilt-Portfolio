@@ -188,16 +188,17 @@ a {
 
 /* Design */
 
-.slider .slides li img {
-    width: -webkit-calc(100% - 40px);
-}
-
 #d-img {
     border-radius: 4px;
 }
 
-.slider .slides {
-    background-color: white;
+.carousel .carousel-item>img {
+    padding:0px 20px 0px 20px;
+}
+
+.carousel-item .active {
+    margin-bottom:0px;
+    padding-bottom:0px;
 }
 
 /* Sidenav */
