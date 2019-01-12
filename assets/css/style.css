@@ -94,11 +94,12 @@ nav .sidenav-trigger i {
 }
 
 #image {
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 10px;
     float: left;
-    width: 250px;
-    height: 270px;
+    width: 220px;
+    height: 220px;
+    border-radius:2px;
 }
 
 /* Contact */
